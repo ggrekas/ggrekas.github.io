@@ -82,6 +82,15 @@
 
 
 <body>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">	
+	<!-- The loading of KaTeX is deferred to speed up page rendering -->
+	<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+	
+	<!-- To automatically render math in text elements, include the auto-render extension: -->
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
+		onload="renderMathInElement(document.body);"></script>
+	
+
 	<h1>Georgios Grekas </h1>
 	<div class="container">
 		<div class="text">
@@ -91,7 +100,7 @@
 			   He held a postdoctoral associate position at the department of Aerospace Engineering and Mechanics, in University of Minnesota (2019-2022). 
 			   Then he moved as a postdoctoral researcher at the Institute of Applied and Computational Mathematics in FORTH, Greece. 
 			   He joined KAUST and the Applied PDE group in March 2024. His research interests include solid mechanics, biomechanics,
-				numerical analysis and scientific computing.
+				numerical analysis, scientific and parallel computing.
 		  </div>
 		<div class="image">
 		  <img src="img/me.jpeg">
@@ -140,10 +149,10 @@
 			    -->
 			  <!-- </tr> -->
 			<!-- </table>/ -->
-		  <!-- </div> --> -->
+		  <!-- </div> --> 
 		<!-- <nav role="navigation"> -->
 
-			<li><h3>Convergence results for discrete minimizers</h3></li>
+			<li><h3>Convergence results of discrete minimizers</h3></li>
 
 			<div class="container2">
 				<!-- <div class="image">
@@ -155,12 +164,39 @@
 					convex and the corresponding Euler-Lagrange equations are not elliptic. This adds computational and numerical analysis challenges, for the
 					former  suitable minimization techniques are required, while for the latter tools from the calculus of variations with new proposed schemes are 
 					needed. Here various numerical schemes are proposed from general convex, to multiwell strain energy functions (first online version for the later finding
-					in December of 2024.)
+					in December of 2024). The suggested numerical schemes have the property that the discrete minimizer of the continuous problem converge to a minimizer
+					of the continuous problem as the discretization parameter goes to zero, i.e
+					<p>\(\int_\Omega W(\nabla y_h) \rightarrow \int_\Omega W(\nabla y), \text{ as } h\rightarrow 0\)</p><br>
+					where \( y_h \) minimizes the discrete problem and \( y \) minimizes the continuous total potential energy.
+       
+				  </div>
+				
+			  </div>
+			 
+			  <li><h3>Efficient Neural Network training through Finite Elements</h3></li>
+
+			<div class="container2">
+				<!-- <div class="image">
+					<img src="img/cells.png">
+				  </div> -->
+				<div class="text2">
+					
+					When an elatic body is subjected to large deformations a multiwell strain energy function is often involved to model the 
+					mechanical behaviour of the material appropriately. Essentially this means that the strain energy function is not rank-one 
+					convex and the corresponding Euler-Lagrange equations are not elliptic. This adds computational and numerical analysis challenges, for the
+					former  suitable minimization techniques are required, while for the latter tools from the calculus of variations with new proposed schemes are 
+					needed. Here various numerical schemes are proposed from general convex, to multiwell strain energy functions (first online version for the later finding
+					in December of 2024). The suggested numerical schemes have the property that the discrete minimizer of the continuous problem converge to a minimizer
+					of the continuous problem as the discretization parameter goes to zero.
 				  </div>
 				
 			  </div>
 
-			<li>Milk</li>
+			  <li><h3>Hysteresis in Micromagnetics</h3></li>
+
+
+			  <li><h3>Nonlinear theories for magnetoelastic and electroelastic materials</h3></li>
+
 		  </ul>
 
 
@@ -193,7 +229,7 @@
 <!-- <p>Department of Mathematics &amp; Applied Mathematics<br />
 University of Crete, 70013, Heraklion<br />
 Tel: <span style="letter-spacing: 0.1em;"></span><br /> -->
-<p><a href="mailto:grekas.g@gmail.com">grekas.g@gmail.com</a></p>
+<p><a href="mailto:grekas.g@gmail.com">email</a></p>
 </div> <!--end module-side-->
 
 </div> <!--end content-->
