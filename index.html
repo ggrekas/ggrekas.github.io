@@ -96,11 +96,12 @@
 		<div class="text">
 			Georgios Grekas is a Postdoctoral Research Fellow at the Applied PDE group of the Applied Mathematics and Computational 
 			  Science program (AMCS) of CEMSE division at the King Abdullah University of Science and Technology, Saudi Arabia. 
-			  He received his Ph.D degree from the department of Applied Mathematics from the University of Crete in 2019.
+			  He received his Ph.D degree from the department of Applied Mathematics from the University of Crete in 2019. Part of his PhD studies
+			  took place to the University of Sussex from March 2016 to March 2018.
 			   He held a postdoctoral position at the Department of Aerospace Engineering and Mechanics, in University of Minnesota (2019-2022). 
 			   Then he moved as a postdoctoral researcher at the Institute of Applied and Computational Mathematics in FORTH, Greece. 
-			   He joined KAUST and the Applied PDE group in March 2024. His research interests include solid mechanics, biomechanics,
-				numerical analysis, scientific and parallel computing.
+			   He joined KAUST and the Applied PDE group in March 2024. His research interests include mathematical modelling (biomechanics,solid mechanics),
+				numerical analysis, scientific and parallel computing, scientific machine learning.
 		  </div>
 		<div class="image">
 		  <img src="img/me.jpeg">
@@ -139,7 +140,7 @@ sussex,
 		
 		<!-- <nav role="navigation"> -->
 
-			<li><h3>Convergence results of discrete minimizers in nonconvex calculus of variations, G-convergence</h3></li>
+			<li><h3>Convergence results of discrete minimizers in nonconvex calculus of variations, \(\Gamma \)-convergence</h3></li>
 
 			<div class="container2">
 				<!-- <div class="image">
@@ -157,13 +158,30 @@ sussex,
 					of the continuous problem as the discretization parameter goes to zero, i.e
 					<p>\(\int_\Omega W(\nabla y_h) \rightarrow \int_\Omega W(\nabla y), \text{ as } h\rightarrow 0\)</p><br>
 					where \( y_h \) minimizes the discrete problem and \( y \) minimizes the continuous total potential energy.
+					To accomplish the above result the theory of \(\Gamma- \)convergence is used. Furthemore, for specific elastic energies
+					a generalization of the embedding theorem for Orlicz spaces, to the piecewise polynomial spaces admitting discontinuities were 
+					required.
        		  
-					<p>Say about the discrete minizing sequences that capture minimizing sequences of the continuous problem.
-						A multiwell potential has been costructed mimicking the austenite-martensite transitions, more precisely 
-						cubic to orthorhombic. Perfect interfacese for the normals n=(1,0), n=(0,1), meaning that continuous deformations
-						with discontinuous gradients can emerge. Red, blue colors indicate the attained phases orthorhombic, cubic respectively.
-						The elastic energy is zero everywhere except the transition layers (green colors).
+					<p> In the geometrically nonlinear theory of elasticity it is well known that under specific boundary conditions 
+						minimizing sequences arise, forming finer and finer microstructures in order to satisfy continuous deformations with 
+						discontinuous deformation gradients, where the deformation gardients belong to the energy wells. 
+						To understand better the behaviour of the discrete minization process we construct a two well (modulo rotations)
+						 elastic energy. Mimicking the austenite-martensite transitions, more precisely 
+						 cubic to orthorhombic transformation, we choose the lattice parameters such that perfect interfaces are formed for the normals n=(1,0),
+						  n=(0,1), in the sense that continuous deformations with discontinuous deformation gradients at the energy 
+						  wells are allowed along these normals.</p>
+
+						  <p>
+						Figure on the right: Discrete minimizers where red, blue colors indicate the attained phases orthorhombic, 
+						cubic respectively. The elastic energy is zero everywhere except the transition layers (green colors).
+						Finer microstructures emerge for finer mesh resolution. Essentially the discrete minimizers capture elements of
+						a sequence \(\{ y_k\} \in W^{1,\infty}(\Omega)\) such that 
+						 such that \( y_k\stackrel{\ast}{\rightharpoonup} y_0\) in \(W^{1, \infty}(\Omega) \)
+						where \(\{ \nabla y_k\} \)  generates the unique homogeneous Young measure 
+						\(\nu_x = 0.5 \delta_I + 0.5 \delta_V\). We show that \(y_0\) is the minimiser of the relaxed problem. 
 					</p>
+						
+					
 				</div>
 				 <div class="image">
 					<img src="img/minimizing_sequences.png" width=8000>
@@ -185,12 +203,12 @@ sussex,
 						strengths of both neural networks and finite element methods. In this approach the trained neural network achieve higher accuracy 
 						lowering the computational cost significantly. The method has developed for domains in \( \mathbf{R}^n, n=1, 2, 3\). These promising 
 						results could indicate improved training techniques in higher dimensional problems as well.
-						<td><p>Solving Poisson's equation (Deep Ritz) where the exact solution has the form \( \sin(2\pi x) \sin(2\pi y)\) for \( (x, y) \in [0,1] \times [0,1] \)
+						<!-- <td><p>Solving Poisson's equation (Deep Ritz) where the exact solution has the form \( \sin(2\pi x) \sin(2\pi y)\) for \( (x, y) \in [0,1] \times [0,1] \)
 							(top left figure), the pointwise square error is plotted for training through Monte-Carlo collocation (top right), quadrature collocation
 							(bottom left) and trianing through finite elements (bottom right). The \( L^2(\Omega)\) error (not shown here) has been reduced by an order of
 							 magnitude  for the proposed method, while the speed-up was in the range of 4-5 faster than the conventional training procedure for the given 
 							 arhcitecture. Richer architectures achieve even higher computational speed up.
-							</p></td>
+							</p></td> -->
 				  </div>
 				  <div class="image">
 					<img src="img/NN.png" width=10000>
@@ -277,8 +295,7 @@ sussex,
 				  </div>	
 			  </div>	
 			  
-			  <li><h4>PINNS and domain decomposition strategies</h4></li>
-			  <li><h4>Brittle fracture </h4></li>
+			  
 			</ul>
 		  </ul>
 
