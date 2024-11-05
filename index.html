@@ -116,9 +116,9 @@
 		<ul>
 			<li><h3>Modelling and Computing Large deformations in collagen matrices</h3></li>
 
-			<div class="container2">
+			<div class="container">
 				<div class="image">
-					<img src="img/cells.png">
+					<img src="img/cells.png" width=10000>
 				  </div>
 				<div class="text2">
 					Collagen fibers is the main component of cells microenvironment. Throught matrix deformations cells can sense alternations in their microenvironment 
@@ -162,38 +162,31 @@
 			 
 			  <li><h3>Efficient Neural Network training through Finite Elements</h3></li>
 
-			<div class="container2">
-				<!-- <div class="image">
-					<img src="img/cells.png">
-				  </div> -->
+
+			  <div class="container">
+			
 				<div class="text2">
-				Unlike standard neural network approaches for PDEs, which typically rely on collocation-type training (whether random or deterministic),
-				 our approach minimises over neural network spaces using specially designed loss functions that incorporate a finite element-based approximation
-				  of the continuous loss. This significantly reduces the number of back-propagation calls within the algorithm, resulting in stable and
-				   robust methods for approximating partial differential equations. Additionally, these methods can be integrated with well-established
-				    techniques in the finite element community, such as adaptivity and mesh generation, to create hybrid algorithms that combine the
-					 strengths of both neural networks and finite element methods. In this approach the trained neural network achieve higher accuracy 
-					 lowering the computational cost significantly. The method has developed for domains in \( \mathbf{R}^n, n=1, 2, 3\). These promising 
-					 results could indicate improved training techniques in higher dimensional problems as well.
-					 <!-- <img src="img/NN.png" width="1000">
-					 Solving the Posson's equation where the exact solutions has the form \( \sin(2\pi x) \sin(2\pi y)\) for \( (x, y) \in [0,1] \times [0,1] \)
-					 The pointwise square error  -->
-					 
-		
-		<div id='container'>
-			<table>
-			  <tr>
-				<td><p>Solving the Posson's equation (Deep Ritz) where the exact solution has the form \( \sin(2\pi x) \sin(2\pi y)\) for \( (x, y) \in [0,1] \times [0,1] \)
-					(top left figure), the pointwise square error is plotted for training through Monte-Carlo collocation (top right), quadrature collocation
-					(bottom left) and trianing through finite elements (bottom right)
-					</p></td>
-					 <div class="image">
-						<img src="img/NN.png" width="1000">
-					  </div>
-			   
-			  </tr>
-			</table>
-		  </div> 
+					Unlike standard neural network approaches for PDEs, which typically rely on collocation-type training (whether random or deterministic),
+					our approach minimises over neural network spaces using specially designed loss functions that incorporate a finite element-based approximation
+					 of the continuous loss. This significantly reduces the number of back-propagation calls within the algorithm, resulting in stable and
+					  robust methods for approximating partial differential equations. Additionally, these methods can be integrated with well-established
+					   techniques in the finite element community, such as adaptivity and mesh generation, to create hybrid algorithms that combine the
+						strengths of both neural networks and finite element methods. In this approach the trained neural network achieve higher accuracy 
+						lowering the computational cost significantly. The method has developed for domains in \( \mathbf{R}^n, n=1, 2, 3\). These promising 
+						results could indicate improved training techniques in higher dimensional problems as well.
+						<td><p>Solving Poisson's equation (Deep Ritz) where the exact solution has the form \( \sin(2\pi x) \sin(2\pi y)\) for \( (x, y) \in [0,1] \times [0,1] \)
+							(top left figure), the pointwise square error is plotted for training through Monte-Carlo collocation (top right), quadrature collocation
+							(bottom left) and trianing through finite elements (bottom right). The \( L^2(\Omega)\) error (not shown here) has been reduced by an order of
+							 magnitude  for the proposed method, while the speed-up was in the range of 4-5 faster than the conventional training procedure for the given 
+							 arhcitecture. Richer architectures achieve even higher computational speed up.
+							</p></td>
+				  </div>
+				  <div class="image">
+					<img src="img/NN.png" width=10000>
+				  </div>	
+			  </div>
+
+ 
 		
 					 <li><h3>Hysteresis in Micromagnetics</h3></li>
 
