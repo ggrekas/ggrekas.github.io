@@ -81,7 +81,8 @@
 	</style>
 
 
-<body >
+<!-- <body style="background-color:#bac4b6;"> -->
+<body>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">	
 	<!-- The loading of KaTeX is deferred to speed up page rendering -->
 	<script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
@@ -121,13 +122,13 @@
 					<img src="img/cells.png" width=10000>
 				  </div>
 				<div class="text2">
-					Collagen fibers is the main component of cells microenvironment. Throught matrix deformations cells can sense alternations in their microenvironment 
-			driving their functions explixitly, like cells movement, deformation, etc and implicitly as nutrient prohibition in high densified regions of collagen 
+					Collagen fibers is the main component of cells microenvironment. Through matrix deformations cells can sense alternations in their microenvironment 
+			driving their functions explicitly, like cells movement, deformation, etc and implicitly as nutrient prohibition in high densified regions of collagen 
 			fibers, see tumor associated collagen signatures (TACS). Therefore, proposing constitutive laws with minimal assumptions 
-			to model these deformations is crusial to elucidate the complex interactions between cells. We suggest a method to construct elastic energy functions starting 
+			to model these deformations is crucial to elucidate the complex interactions between cells. We suggest a method to construct elastic energy functions starting 
 			from 1-dimensional constitutive laws for large deformations. Deriving 2-dimensional elastic energy functions we compare the numerical computed solutions with
-			experiment results. In our experimental data robotic cells have been employed, which constract and expand by demand. Our model is capable of capturing numerous 
-			experimental observatios, as densified collagen tracts between cells and in the radial direction of each cell, remaining densified regions after unloading and 
+			experiment results. In our experimental data robotic cells have been employed, which contract and expand by demand. Our model is capable of capturing numerous 
+			experimental observations, as densified collagen tracts between cells and in the radial direction of each cell, remaining densified regions after unloading and 
 			long range mechanosensing as a result of the special proposed nonlinearity. It is noteworthy that part of this study has been recommended in Faculty 
 			Opinions as being of special significance in its field (https://connect.h1.co/article/739575317). We explore further materials of this kind by developing 
 			theoretical and computational tools.
@@ -148,23 +149,23 @@
 				<div class="text2">
 					
 
-					When an elatic body is subjected to large deformations a multiwell strain energy function is often involved to model the 
-					mechanical behaviour of the material appropriately. Essentially this means that the strain energy function is not rank-one 
+					When an elastic body is subjected to large deformations a multi-well strain energy function is often involved to model the 
+					mechanical behavior of the material appropriately. Essentially this means that the strain energy function is not rank-one 
 					convex and the corresponding Euler-Lagrange equations are not elliptic. This adds computational and numerical analysis challenges, for the
 					former  suitable minimization techniques are required, while for the latter tools from the calculus of variations with new proposed schemes are 
-					needed. Here various numerical schemes are proposed from general convex, to multiwell strain energy functions (first online version for the later finding
+					needed. Here various numerical schemes are proposed from general convex, to multi-well strain energy functions (first online version for the later finding
 					in December of 2024). The suggested numerical schemes have the property that the discrete minimizer of the continuous problem converge to a minimizer
 					of the continuous problem as the discretization parameter goes to zero, i.e
 					<p>\(\int_\Omega W(\nabla y_h) \rightarrow \int_\Omega W(\nabla y), \text{ as } h\rightarrow 0\)</p><br>
 					where \( y_h \) minimizes the discrete problem and \( y \) minimizes the continuous total potential energy.
-					To accomplish the above result the theory of \(\Gamma- \)convergence is used. Furthemore, for specific elastic energies
+					To accomplish the above result the theory of \(\Gamma- \)convergence is used. Furthermore, for specific elastic energies
 					a generalization of the embedding theorem for Orlicz spaces, to the piecewise polynomial spaces admitting discontinuities were 
 					required.
        		  
 					<p> In the geometrically nonlinear theory of elasticity it is well known that under specific boundary conditions 
 						minimizing sequences arise, forming finer and finer microstructures in order to satisfy continuous deformations with 
-						discontinuous deformation gradients, where the deformation gardients belong to the energy wells. 
-						To understand better the behaviour of the discrete minization process we construct a two well (modulo rotations)
+						discontinuous deformation gradients, where the deformation gradients belong to the energy wells. 
+						To understand better the behavior of the discrete minimization process we construct a two well (modulo rotations)
 						 elastic energy. Mimicking the austenite-martensite transitions, more precisely 
 						 cubic to orthorhombic transformation, we choose the lattice parameters such that perfect interfaces are formed for the normals n=(1,0),
 						  n=(0,1), in the sense that continuous deformations with discontinuous deformation gradients at the energy 
@@ -195,7 +196,7 @@
 			
 				<div class="text2">
 					Unlike standard neural network approaches for PDEs, which typically rely on collocation-type training (whether random or deterministic),
-					our approach minimises over neural network spaces using specially designed loss functions that incorporate a finite element-based approximation
+					our approach minimizes over neural network spaces using specially designed loss functions that incorporate a finite element-based approximation
 					 of the continuous loss. This significantly reduces the number of back-propagation calls within the algorithm, resulting in stable and
 					  robust methods for approximating partial differential equations. Additionally, these methods can be integrated with well-established
 					   techniques in the finite element community, such as adaptivity and mesh generation, to create hybrid algorithms that combine the
@@ -205,10 +206,10 @@
 						
 						 <td><p>
 							Approximating the solution of an energy (Deep Ritz method) where the exact solution is shown in the top left figure,
-							the pointwise square error is plotted for training through Monte-Carlo collocation (top right), quadrature collocation
-							(bottom left) and trianing through finite elements (bottom right). The \( L^2(\Omega)\) error (not shown here) has been reduced by an order of
+							the point-wise square error is plotted for training through Monte-Carlo collocation (top right), quadrature collocation
+							(bottom left) and training through finite elements (bottom right). The \( L^2(\Omega)\) error (not shown here) has been reduced by an order of
 							 magnitude  for the proposed method, while the speed-up was in the range of 4-5 faster than the conventional training procedure for the given 
-							 arhcitecture. 
+							 architecture. 
 							</p></td>
 				  </div>
 				  <div class="image">
@@ -235,7 +236,7 @@
 					</p>
 					
 					 <p>
-					 To undersand the appearance of intermediate twinning in this complex phase transformation
+					 To understand the appearance of intermediate twinning in this complex phase transformation
 					 we design a geometrically nonlinear electroelastic energy depending on the deformation gradient, spontaneous
 					   polarization and temperature. Evaluating explicitly the structure of the energy wells from X-ray diffraction measurements, 
 					     we predict the observed transformations, intermediate twinning and detailed polarization as minimizers of the proposed free energy.
@@ -248,8 +249,8 @@
 					
 					<p>
 					This study reveals that even if deformations are very small the response of the material is highly nonlinear. The model predicts the cubic to
-					tetragonal transformation as a twinned laminate between the tetragonal variants (blue-green clolors) which is compatible to the cubic phase
-					 (red color) in top left figure. Furthemore, the theoretical computed interfaces (top right image) forming a crossing twin are compared with
+					tetragonal transformation as a twinned laminate between the tetragonal variants (blue-green colors) which is compatible to the cubic phase
+					 (red color) in top left figure. Furthermore, the theoretical computed interfaces (top right image) forming a crossing twin are compared with
 					 the experimental observed orthorhombic phase (bottom left). It is remarkable that superimposing the two images (top right with bottom left)  
 					 the theoretical interfaces coincide with the experimental observation.
 					</p>
@@ -277,12 +278,12 @@
 			  <div class="container">
 			
 				<div class="text2">
-					<p>Through honogenization techniques we obtain 2-D or 3-D force-strain relations incorporating inertia and viscous terms.
+					<p>Through homogenization techniques we obtain 2-D or 3-D force-strain relations incorporating inertia and viscous terms.
 					Novel continuous and discrete models are proposed connecting the model with the response of a single fiber. We expect our 
 					results to enhance our understanding of collagen network deformations and elucidate aspects of cells communication.
 							</p>
 
-					<p>Right: A preliminarly results for the descrite model. Here every edge of a square represents a fiber with a given constitutive
+					<p>Right: A preliminary results for the discrete model. Here every edge of a square represents a fiber with a given constitutive
 						law (linear response is shown). Viscous forces are neglected.
 					</p>
 
